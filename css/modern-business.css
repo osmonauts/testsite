@@ -18,6 +18,7 @@ body {
 .img-portfolio {
     margin-bottom: 30px;
     height: 476px;
+    float: left;
 }
 
 .img-hover:hover {
