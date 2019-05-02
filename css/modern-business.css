@@ -97,3 +97,8 @@ footer {
   width:250px;
   height:250px;
 }
+
+img.icon {
+    display: inline-block;
+    margin-right: 10px
+}
