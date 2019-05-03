@@ -102,3 +102,8 @@ img.icon {
     display: inline-block;
     margin-right: 10px
 }
+
+.row.project {
+    margin-top: 20px;
+    padding: 0 30px;
+}
