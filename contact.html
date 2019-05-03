@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>ICON Lab</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-</head>
+<head></head>
 
 <body>
     <!-- Navigation -->
@@ -40,7 +29,7 @@
             <!-- Map Column -->
             <div class="col-md-8">
                 <!-- Embedded Google Map -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6368.80593981458!2d-111.93407858334513!3d33.41871292292351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ddba2f5759%3A0xb05ca2f7403dcaf4!2sGoldwater+Center+for+Science+and+Engineering%2C+650+E+Tyler+Mall%2C+Tempe%2C+AZ+85281!5e0!3m2!1sen!2sus!4v1440444515900" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6368.80593981458!2d-111.93407858334513!3d33.41871292292351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ddba2f5759%3A0xb05ca2f7403dcaf4!2sGoldwater+Center+for+Science+and+Engineering%2C+650+E+Tyler+Mall%2C+Tempe%2C+AZ+85281!5e0!3m2!1sen!2sus!4v1440444515900" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <!-- Contact Details Column -->
             <div class="col-md-4">
@@ -52,7 +41,7 @@
                     Arizona State University<br>
                     Tempe, AZ 85287-1804<br>
                 </p>
-<p> Office: Goldwater Building, Rm 648 </p>
+                <p> Office: Goldwater Building, Rm 648 </p>
                 <p><i class="fa fa-phone"></i> 
                     <abbr title="Phone">P</abbr>: (480) 965-0403</p>
                 <p><i class="fa fa-envelope-o"></i> 
@@ -91,34 +80,26 @@
 
                 <!-- /.row -->
 
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
-                </div>
-            </div>
-        </footer>
+<hr>
+<!-- Footer -->
+<footer></footer>
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
+    
     <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Script to Activate the Carousel -->
     <script>
-    $( document ).ready(function() {
-        $('.carousel').carousel({
-            interval: 4000 //changes the speed
-        });
-
-        $( "#navbar" ).load( "./navbar.html" );
-        });
-    </script>
+        $(document).ready(function() {
+                          $('.carousel').carousel({
+                                                  interval: 4000 //changes the speed
+                                                  });
+                          
+                          $("head").load("./head.html");
+                          $("#navbar").load("./navbar.html");
+                          $('footer').load("./footer.html");
+                          });
+        </script>
 </body>
 
 </html>

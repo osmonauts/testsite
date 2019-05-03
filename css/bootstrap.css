@@ -1406,6 +1406,7 @@ a.bg-danger:hover {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
+  text-align:center;
 }
 ul,
 ol {
@@ -1957,6 +1958,7 @@ pre code {
   }
   .col-md-4 {
     width: 33.33333333%;
+    text-align: center;
   }
   .col-md-3 {
     width: 25%;

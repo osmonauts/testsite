@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>ICON Lab</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-</head>
+<head></head>
 
 <body>
     <!-- Navigation -->
@@ -24,9 +13,7 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Laboratory for Informatics and Computation in Open Neuroscience
-                    <small>Research</small>
-                </h1>
+                <h1 class="page-header">Research at the ICON Lab</h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
                     </li>
@@ -37,55 +24,96 @@
         <!-- /.row -->
 
         <div class="row">
-        <div class="col-lg-12">
-<h4> The multidisciplinary research performed in our laboratory includes both 1) modeling studies that aim to connect biological mechanisms and structures to neural function, and 2) neuroinformatic approaches that promote model validation, reproducibility, exchange, and selection. </h4>
-</div>
+            <div class="col-md-6" style="text-align: center;">
+                <img src="images/research-diagram.png" />
+            </div>
+            <div class="col-md-6" style="margin-top: 80px">
+                <h4>The research in our laboratory focuses on the following areas:</h4>
+                <ul style="font-size:16px;">
+                    <li><b>Data science</b></li>
+                    <li><b>Resources for Data Driven Modeling</b></li>
+                    <li><b>Modeling at Multiple Scales</b></li>
+                </ul>
+                
+            </div>
         </div>
-
-<hr>
-
-        <!-- Project One -->
+        
         <div class="row">
-            <div class="col-md-6">
-                <a href="http://www.opensourcebrain.org/projects/miglioreetal14_olfactorybulb3d">
-                    <img class="img-responsive img-hover" src="images/olfactory_model.jpg" alt="Olfactory Model @ OSB"></a>
+            <div class="col-md-4">
+                <h3 style="margin-top: 46px;">Data Science</h3>
+                <hr/>
+                
+                <div class="row project">
+                    <a href="#">
+                        <img class="img-responsive img-hover" src="images/decision-tree.jpg" alt="">
+                            </a>
+                    <h4>Olfactory Psychophysics</h4>
+                    <p>How does the structure of a molecule determine its smell?  How can the smell of
+                    mixtures of molecules be predicted?  What is the shape and structure of the perceptual
+                    space in olfaction?</p>
+                    <a class="btn btn-primary" href="http://lens.elifesciences.org/08127/index.html">Counting Smells</i></a><br>
+                    <br>
+                    <a class="btn btn-primary" href="https://www.synapse.org/#!Synapse:syn2811262/wiki/78368">Predicting Odors</i></a><br><br>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Community-based Olfactory Modeling</h3>
-                <h4>at Open Source Brain</h4>
-                <p>We are currently contributing to an effort to convert the 
-Migliore et al. (2014) model of the olfactory bulb into NeuroML in support of 
-a modular approach to community based modeling. Find out more at Open Source 
-Brain.</p>
-                <a class="btn btn-primary" href="http://www.opensourcebrain.org/projects/miglioreetal14_olfactorybulb3d">View Project at OSB</i></a>
+            <div class="col-md-4">
+                <h3>Resources for Data Driven Modeling</h3>
+                <hr/>
+                
+                <div class="row project">
+                    <div class="col-md-6">
+                        <a href="http://github.com/scidash/sciunit">
+                            <img class="img-responsive img-hover" src="https://raw.githubusercontent.com/scidash/assets/master/logos/SciUnit/sci-unit-square.png" width="200px" alt="">
+                                </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="http://github.com/scidash/neuronunit">
+                            <img class="img-responsive img-hover" src="https://raw.githubusercontent.com/scidash/assets/master/logos/neuronunit/NeuronUnitBlack1_vertical.png" width="200px" alt="">
+                                </a>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <h4>Tools for the Validation of Neuron Models</h4>
+                    <p>Computational models are quantitative hypothesis about the systems we study.
+                    How do we know what the evidence is for or against these hypotheses?  How can we know which
+                    models can account for which experimental data?  Can the testing process be formalized?</p>
+                    <a class="btn btn-primary" href="http://github.com/scidash/neuronunit">View Project on GitHub</i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3 style="margin-top: 46px;">Modeling at Multiple Scales</h3>
+                <hr/>
+                
+                <div class="row project">
+                    
+                    <a href="http://www.opensourcebrain.org/projects/miglioreetal14_olfactorybulb3d">
+                        <img class="img-responsive img-hover" src="images/olfactory_model.jpg" alt="Olfactory Model @ OSB"></a>
+                    
+                    <h4>Community-based Olfactory Modeling at Open Source Brain</h4>
+                    <p>We are currently contributing to an effort to convert the
+                    Migliore et al. (2014) model of the olfactory bulb into NeuroML in support of
+                    a modular approach to community based modeling. Find out more at Open Source
+                    Brain.</p>
+                    <a class="btn btn-primary" href="http://www.opensourcebrain.org/projects/miglioreetal14_olfactorybulb3d">View Project at OSB</i></a>
+                </div>
+                
+                <hr>
+                
+                
+                <div class="row project">
+                    <a href="files/Gardner_etal.pdf">
+                        <img class="img-responsive img-hover" src="images/retina.jpg" alt="">
+                            </a>
+                    <h4>The Retina</h4>
+                    <p>Read about how our work contributes to understanding a few interesting mechanisms employed in the retina.</p>
+                    <a class="btn btn-primary" href="files/Gardner_etal.pdf">Ephaptic Mechanisms</i></a><br>
+                    <br>
+                    <a class="btn btn-primary" href="http://smc.neuralcorrelate.com/files/publications/mccamy_etal_jn2012.pdf">Microsaccadic Efficacy</i></a><br>
+                    <br>
+                    <a class="btn btn-primary" href="http://smc.neuralcorrelate.com/files/publications/costela_etal_plosone2014.pdf">Fixational Eye Movements</i></a><br>
+                    
+                </div>
             </div>
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-3">
-                <a href="http://github.com/scidash/sciunit">
-                    <img class="img-responsive img-hover" src="https://raw.githubusercontent.com/scidash/assets/master/logos/SciUnit/sci-unit-square.png" width="200px" alt="">
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="http://github.com/scidash/neuronunit">
-                    <img class="img-responsive img-hover" src="https://raw.githubusercontent.com/scidash/assets/master/logos/neuronunit/NeuronUnitBlack1_vertical.png" width="200px" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3>SciUnit/Neuronunit</h3>
-                <h4>Tools for the Validation of Neuron Models</h4>
-                <p>Computational models are quantitative hypothesis about the systems we study.  
-                How do we know what the evidence is for or against these hypotheses?  How can we know which
-                models can account for which experimental data?  Can the testing process be formalized?</p>
-                <a class="btn btn-primary" href="http://github.com/scidash/neuronunit">View Project on GitHub</i></a>
-            </div>
-        </div>
-        <!-- /.row -->
 
         <hr>
 
@@ -113,78 +141,25 @@ Brain.</p>
 
 
         <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-6">
-                <a href="files/Gardner_etal.pdf">
-                    <img class="img-responsive img-hover" src="images/retina.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3>The Retina</h3>
-                <h4>Models and Data Analysis</h4>
-                <p>Read about how our work contributes to understanding a few interesting mechanisms employed in the retina.</p>
-		<a class="btn btn-primary" href="files/Gardner_etal.pdf">Ephaptic Mechanisms</i></a><br>
-<br>
-                 <a class="btn btn-primary" href="http://smc.neuralcorrelate.com/files/publications/mccamy_etal_jn2012.pdf">Microsaccadic Efficacy</i></a><br>
-<br>
-                 <a class="btn btn-primary" href="http://smc.neuralcorrelate.com/files/publications/costela_etal_plosone2014.pdf">Fixational Eye Movements</i></a><br>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-6">
-                <a href="#">
-                    <img class="img-responsive img-hover" src="images/decision-tree.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3>Olfactory Psychophysics</h3>
-                <h4>Statistics and Machine Learning</h4>
-                <p>How does the structure of a molecule determine its smell?  How can the smell of 
-                mixtures of molecules be predicted?  What is the shape and structure of the perceptual 
-                space in olfaction?</p>
-                <a class="btn btn-primary" href="http://lens.elifesciences.org/08127/index.html">Counting Smells</i></a><br>
-<br>
-                <a class="btn btn-primary" href="https://www.synapse.org/#!Synapse:syn2811262/wiki/78368">Predicting Odors</i></a><br><br>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
-                </div>
-            </div>
-        </footer>
-
+        
+        <footer></footer>
+        
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
+    
     <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Script to Activate the Carousel -->
     <script>
-    $( document ).ready(function() {
-        $('.carousel').carousel({
-            interval: 4000 //changes the speed
-        });
-
-        $( "#navbar" ).load( "./navbar.html" );
-        });
-    </script>
+        $(document).ready(function() {
+                          $('.carousel').carousel({
+                                                  interval: 4000 //changes the speed
+                                                  });
+                          
+                          $("head").load("./head.html");
+                          $("#navbar").load("./navbar.html");
+                          $('footer').load("./footer.html");
+                          });
+        </script>
 </body>
 
 </html>
