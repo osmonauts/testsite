@@ -114,3 +114,13 @@ img.icon {
 .col-md-4 {
     text-align: center;
 }
+
+.logo-image {
+    text-align: center;
+}
+.logo-image img {
+    width: 100%;
+    margin-bottom: 40px;
+    max-width: 262px;
+    display: inline-block;
+}
