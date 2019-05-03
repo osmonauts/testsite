@@ -19,6 +19,7 @@ body {
     margin-bottom: 30px;
     height: 476px;
     float: left;
+    min-width: 390px;
 }
 
 .img-hover:hover {
@@ -73,6 +74,7 @@ header.carousel .fill {
 
 footer {
     margin: 50px 0;
+    text-align: center;
 }
 
 /* Responsive Styles */
@@ -96,6 +98,7 @@ footer {
 .img-portfolio .img-responsive{
   width:250px;
   height:250px;
+  margin: 0 auto;
 }
 
 img.icon {
@@ -106,4 +109,8 @@ img.icon {
 .row.project {
     margin-top: 20px;
     padding: 0 30px;
+}
+
+.col-md-4 {
+    text-align: center;
 }

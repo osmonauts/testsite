@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head></head>
-<body>
-    <!-- Navigation -->
-    <div id="navbar"></div>
-    <!-- Header Carousel -->
+---
+layout: default
+title: The People of the ICON Laboratory
+---
+
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -41,8 +39,6 @@
             <span class="icon-next"></span>
         </a>
     </header>
-    <!-- Page Content -->
-    <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
@@ -530,26 +526,4 @@
             </div>
 
         </div>
-        <!-- /.row -->
-        <hr>
-        <!-- Footer -->
-        <footer></footer>
         
-        </div>
-        <!-- /.container -->
-        
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script>
-        $(document).ready(function() {
-        $('.carousel').carousel({
-        interval: 4000 //changes the speed
-        });
-        
-        $("head").load("./head.html");
-        $("#navbar").load("./navbar.html");
-        $('footer').load("./footer.html");
-        });
-        </script>
-</body>
-</html>
