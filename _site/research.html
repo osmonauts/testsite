@@ -14,7 +14,7 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/all.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
         
@@ -37,30 +37,32 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img class="icon" src="images/icon.png" alt="ASU ICON Lab" />The ICON Laboratory</a>
+                    <a class="navbar-brand" href="index.html" style="padding-right:0"><img class="icon" src="images/icon.png" alt="ASU ICON Lab" />ICON Lab<span class="hide-on-narrow"> at Arizona State University</span></a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
+                
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         
                         <li>
-                            <a href="people.html">People</a>
+                            <a id="home" href="index.html">Home</a>
                         </li>
                         
                         <li>
-                            <a href="research.html">Research</a>
-                        </li>
-                        <!--
-                        <li>
-                            <a href="software.html">Software</a>
-                        </li>
-                         -->
-                        <li>
-                            <a href="training.html">Training</a>
+                            <a id="people" href="people.html">People</a>
                         </li>
                         
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a id="research" href="research.html">Research</a>
+                        </li>
+                        <li>
+                            <a id="software" href="software.html">Software</a>
+                        </li>
+                        <li>
+                            <a id="training" href="training.html">Training</a>
+                        </li>
+                        
+                        <li>
+                            <a id="contact" href="contact.html">Contact</a>
                         </li>
                         
                     </ul>
@@ -73,39 +75,41 @@
 
     <!-- Page Content -->
     <div class="container">
-        <!-- Page Heading/Breadcrumbs -->
+        <style>
+@media (min-width: 992px) {
+    .col-sm-4 {
+        width: 32%;
+    }
+}
+@media (max-width: 425px) {
+    .col-sm-4 {
+        margin: 0 15px;
+    }
+}
+.col-sm-4 {
+    text-align:center;
+    display: inline-block;
+    float: none;
+    vertical-align:top;
+    min-width:280px;
+    margin-bottom: 15px !important;
+}
+</style>
 <div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">Research at the ICON Lab</h1>
+    <div class="col-sm-12">
+        <img src="images/icon_lab_research_infographic_v3.png" style="width: 100%; margin-bottom: 40px;">
     </div>
 </div>
-<!-- /.row -->
-
-<div class="row">
-    <div class="col-md-6" style="text-align: center;">
-        <img src="images/research-diagram.png" />
-    </div>
-    <div class="col-md-6" style="margin-top: 80px">
-        <h4>The research in our laboratory focuses on the following areas:</h4>
-        <ul style="font-size:16px;">
-            <li><b>Data science</b></li>
-            <li><b>Resources for Data Driven Modeling</b></li>
-            <li><b>Modeling at Multiple Scales</b></li>
-        </ul>
-        
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
+<div class="row" style="text-align:center;">
+    <div class="col-sm-4 page-box">
         <h3>Data Science</h3>
         <hr/>
         
         <div class="row project">
             <a href="#">
-                <img class="img-responsive img-hover" src="images/decision-tree.jpg" alt="">
+                <img class="img-responsive img-hover" src="images/decision-tree.png" alt="">
                     </a>
-            <h4>Olfactory Psychophysics</h4>
+            <h4>Olfactory Psychophysics Data</h4>
             <p>How does the structure of a molecule determine its smell?  How can the smell of
             mixtures of molecules be predicted?  What is the shape and structure of the perceptual
             space in olfaction?</p>
@@ -113,31 +117,51 @@
             <br>
             <a class="btn btn-primary" href="https://www.synapse.org/#!Synapse:syn2811262/wiki/78368">Predicting Odors</i></a><br><br>
         </div>
+        
+        <hr>
+        
+        <div class="row project">
+            
+            <a href="https://neuroml-db.org">
+                <img class="img-responsive img-hover" src="images/logos/neuroml-db.png" alt="NeuroML"></a>
+            
+            <h4>NeuroML Database</h4>
+            <p>The lab maintains the NeuroML Database, which hosts and provides analysis and characterization of
+            1,500+ computational neuroscience models.</p>
+            <a class="btn btn-primary" href="https://neuroml-db.org">Visit the NeuroML Database</i></a>
+        </div>
+        
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-4 page-box" style="margin: 0 15px;">
         <h3>Resources for Modeling</h3>
         <hr/>
         
         <div class="row project">
-            <div class="col-md-6">
-                <a href="http://github.com/scidash/sciunit">
-                    <img class="img-responsive img-hover" src="https://raw.githubusercontent.com/scidash/assets/master/logos/SciUnit/sci-unit-square.png" width="200px" alt="">
-                        </a>
-            </div>
-            <div class="col-md-6">
-                <a href="http://github.com/scidash/neuronunit">
-                    <img class="img-responsive img-hover" src="https://raw.githubusercontent.com/scidash/assets/master/logos/neuronunit/NeuronUnitBlack1_vertical.png" width="200px" alt="">
-                        </a>
-            </div>
-            <div style="clear:both;"></div>
-            <h4>Tools for the Validation of Neuron Models</h4>
+            
+            <a href="http://github.com/scidash/neuronunit">
+                <img class="img-responsive img-hover" src="images/sciunit-neuronunit.png" alt="NeuroML"></a>
+            
+            <h4>Validation of Neuroscience Models</h4>
             <p>Computational models are quantitative hypothesis about the systems we study.
             How do we know what the evidence is for or against these hypotheses?  How can we know which
             models can account for which experimental data?  Can the testing process be formalized?</p>
             <a class="btn btn-primary" href="http://github.com/scidash/neuronunit">View Project on GitHub</i></a>
         </div>
+        
+        <hr>
+        
+        <div class="row project">
+            
+            <a href="https://neuroml.org">
+                <img class="img-responsive img-hover" src="images/logos/neuroml.png" alt="NeuroML"></a>
+            
+            <h4>NeuroML Initiative</h4>
+            <p>We contribute to the development of NeuroML, a modular, declarative, and simulator-independent model
+            description standard.</p>
+            <a class="btn btn-primary" href="https://neuroml.org">Learn more about NeuroML</i></a>
+        </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-4 page-box">
         <h3>Modeling at Multiple Scales</h3>
         <hr/>
         
@@ -146,7 +170,7 @@
             <a href="http://www.opensourcebrain.org/projects/miglioreetal14_olfactorybulb3d">
                 <img class="img-responsive img-hover" src="images/olfactory_model.jpg" alt="Olfactory Model @ OSB"></a>
             
-            <h4>Community-based Olfactory Modeling at Open Source Brain</h4>
+            <h4>Community-Based Olfactory Modeling</h4>
             <p>We are currently contributing to an effort to convert the
             Migliore et al. (2014) model of the olfactory bulb into NeuroML in support of
             a modular approach to community based modeling. Find out more at Open Source
@@ -161,7 +185,7 @@
             <a href="files/Gardner_etal.pdf">
                 <img class="img-responsive img-hover" src="images/retina.jpg" alt="">
                     </a>
-            <h4>The Retina</h4>
+            <h4>Modeling Feedback in the Retina</h4>
             <p>Read about how our work contributes to understanding a few interesting mechanisms employed in the retina.</p>
             <a class="btn btn-primary" href="files/Gardner_etal.pdf">Ephaptic Mechanisms</i></a><br>
             <br>
@@ -173,47 +197,28 @@
     </div>
 </div>
 
-<hr>
-
-<!-- Project Three -->
-<div class="row">
-    <div class="col-md-6">
-        <a href="https://neuroml.org/CRCNS2014_Web/index.html">
-            <img class="img-responsive img-hover" src="images/CRCNS_flyer.jpg" alt="CRCNS"></a>
-        </a>
-    </div>
-    <div class="col-md-6">
-        <h3>Open Science</h3>
-        <h4>Infrastructure for Collaborative Modeling and Model Exchange</h4>
-        <p> See an interview in the International Neuroinformatics Coordinating Facility Newsletter regarding reproduciblity in computational neuroscience. </p>
-        <p><a class="btn btn-primary" href="files/incf-newsletter-2010-issue2.pdf"> INCF Newsletter</i></a>
-        </p>
-        <br>
-        <p> Our neuroinformatics research depends on open access to models and is facilitated by the integration of tools under common standards or “languages”. NeuroML is a markup language that provides a standardized format for describing neuron and neuronal network models.</p>
-        <p><a class="btn btn-primary" href="https://neuroml.org">Learn More about NeuroML</i></a></p>
-        <br>
-        <p> Visit NeuroML-DB, a database of neuroscience models available in NeuroML.</p>
-        <p><a class="btn btn-primary" href="https://neuroml-db.org">Search NeuroML-DB</i></a></p>
-    </div>
-</div>
-
-
-<hr>
-
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
+                    <p>Copyright ICON Lab &copy; <script>document.write(new Date().getFullYear())</script></p>
                 </div>
             </div>
         </footer>
     </div>
     <script>
     $(document).ready(function() {
-                      $('.carousel').carousel({ interval: 4000 });
+        $('.carousel').carousel({ interval: 8*1000 });
+
+        //Set the active menu window
+        var url = window.location.pathname;
+        var filename = url.substring(url.lastIndexOf('/')+1);
+        $('.nav a').each(function() {
+            if($(this).attr("href") == filename) {
+                $(this).addClass("active")
+            }
+        })
                       
-                      $("header").insertAfter("#navbar")
-                      });
+    });
     </script>
 </body>
 

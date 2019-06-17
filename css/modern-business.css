@@ -17,9 +17,11 @@ body {
 
 .img-portfolio {
     margin-bottom: 30px;
-    height: 476px;
-    float: left;
-    min-width: 390px;
+    display: inline-block;
+    min-width: 355px;
+    vertical-align: top;
+    float: none;
+    width:355px;
 }
 
 .img-hover:hover {
@@ -96,8 +98,8 @@ footer {
     }
 }
 .img-portfolio .img-responsive{
-  width:250px;
-  height:250px;
+  width:200px;
+  height:200px;
   margin: 0 auto;
   border-radius:10px;
 }
@@ -112,16 +114,47 @@ img.icon {
     padding: 0 30px;
 }
 
-.col-md-4 {
-    text-align: center;
+.row.project p {
+    text-align: left;
 }
 
 .logo-image {
-    text-align: center;
+    width: 275px;
+    display: inline-block;
 }
 .logo-image img {
     width: 100%;
     margin-bottom: 40px;
     max-width: 262px;
     display: inline-block;
+}
+
+.navbar .active {
+    background: #f1a143;
+    color: #212121 !important;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 9px;
+}
+
+#myCarousel {
+    height: 284px;
+    background-color: #01040f;
+    margin-top: 30px;
+}
+
+#myCarousel, #myCarousel .carousel-inner, .carousel-control {
+    border-radius: 10px;
+}
+
+.img-responsive {
+    border-radius: 10px;
+}
+
+.page-box {
+    background: mintcream;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
 }

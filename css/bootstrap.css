@@ -1403,9 +1403,7 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
+  margin: 40px 0 40px;
   text-align:center;
 }
 ul,
@@ -3090,6 +3088,7 @@ fieldset[disabled] .btn-default.active {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
+  width: 100%;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -4223,6 +4222,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-toggle {
     display: none;
   }
+}
+
+@media (max-width: 992px) {
+    .hide-on-narrow {
+        display: none;
+    }
 }
 .navbar-nav {
   margin: 7.5px -15px;
