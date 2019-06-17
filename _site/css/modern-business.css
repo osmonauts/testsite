@@ -130,7 +130,7 @@ img.icon {
 }
 
 .navbar .active {
-    background: #f1a143;
+    background: #f1a143 !important;
     color: #212121 !important;
     border-radius: 10px;
     margin: 6px;
