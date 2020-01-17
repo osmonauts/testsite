@@ -1,6 +1,0 @@
-Render the .blend file into an mkv animation
-
-Then generate the gif with:
-
-ffmpeg -i HomeHeader0032-0120.mkv -vf palettegen palette.png
-ffmpeg -i HomeHeader0032-0120.mkv -i palette.png -lavfi "fps=15, paletteuse" out.gif

@@ -1,2 +1,4 @@
 *.DS_Store
 Untitled\.xcworkspace/
+webfonts/*
+_site/*
