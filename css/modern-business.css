@@ -153,7 +153,7 @@ img.icon {
 }
 
 .page-box {
-    background: mintcream;
+    background: rgba(245, 247, 255, 0.863);
     border-radius: 10px;
     padding: 20px;
     border: 1px solid lightgray;
